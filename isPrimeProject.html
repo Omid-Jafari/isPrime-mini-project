@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>checking prime number</title>
+	</head>
+	<body>
+			<script type="text/javascript">
+				let num1 = prompt("Enter a number for checking whether it is prime or not : ");
+				let n = 2;
+				while(n<parseInt(num1**.5) +1) {
+										if (num1%n==0 && num1 != 2) {
+						alert(`Your number is not prime.Because for example it is divisible by number : ${n}`)
+						break;
+					}
+					else{
+						alert(`Your number is prime.`)
+						break;
+					};
+					n++;
+				};
+
+			</script>
+	</body>
+</html>
