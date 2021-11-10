@@ -5,20 +5,16 @@
 	</head>
 	<body>
 			<script type="text/javascript">
-				let num1 = prompt("Enter a number for checking whether it is prime or not : ");
-				let n = 2;
-				while(n<parseInt(num1**.5) +1) {
-										if (num1%n==0 && num1 != 2) {
-						alert(`Your number is not prime.Because for example it is divisible by number : ${n}`)
-						break;
+				let n = prompt("Enter a number for checking whether it is prime or not : ");
+				let i = 2;
+				let isPrime = "Your number is prime.";
+				while (i<parseInt(n**.5) +1) {
+					if (n % i ==0) {
+						isPrime = `Your number is not prime.Because for example it is divisible by number : ${i}`;
 					}
-					else{
-						alert(`Your number is prime.`)
-						break;
-					};
-					n++;
-				};
-
+					i++;
+				}
+				alert(isPrime)
 			</script>
 	</body>
 </html>
